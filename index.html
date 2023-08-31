@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tickstream Subscription</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body style="background-color:rgb(255, 255, 255);">
+  <select id="ticks-history-select">
+    <option value="1HZ10V">Volatility 10 (1s) Index</option>
+    <option value="1HZ25V">Volatility 25 (1s) Index</option>
+    <option value="1HZ50V">Volatility 50 (1s) Index</option>
+    <option value="1HZ75V">Volatility 75 (1s) Index</option>
+    <option value="1HZ100V">Volatility 100 (1s) Index</option>
+    <option value="R_10">Volatility 10 Index</option>
+    <option value="R_25">Volatility 25 Index</option>
+    <option value="R_50">Volatility 50 Index</option>
+    <option value="R_75">Volatility 75 Index</option>
+    <option value="R_100">Volatility 100 Index</option>
+    <option value="JD10">Jump 10 Index</option>
+    <option value="JD25">Jump 25 Index</option>
+    <option value="JD50">Jump 50 Index</option>
+    <option value="JD75">Jump 75 Index</option>
+    <option value="JD100">Jump 100 Index</option>
+  </select>
+  <button id="start-stop-button">Start</button>
+  <p id="rise-count"></p>
+  <p id="fall-count"></p>
+  <div id="plotly-chart"></div>
+  <p id="rise-percentage"></p>
+  <p id="fall-percentage"></p>
+  <ul id="price-list"></ul>
+  
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

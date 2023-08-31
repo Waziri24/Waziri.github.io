@@ -1,0 +1,10 @@
+/* styles.css */
+
+#chart-container {
+    margin: 20px auto; /* Adjust margins for spacing */
+    width: 80%; /* Adjust width as needed */
+    background-color: rgb(255, 255, 255); /* Background color for the chart container */
+    border: 1px solid #ffffff; /* Add a border for separation */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Add a subtle shadow */
+  }
+  
